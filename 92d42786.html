@@ -82,8 +82,7 @@
         // 获取access_token
         // access_token是公众号的全局唯一票据，公众号调用各接口时都需使用access_token。
         // 正常情况下access_token有效期为7200秒，重复获取将导致上次获取的access_token失效
-        var access_token = getParameterByName(https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxf9e0c9463f5a2c2f&secret=13626dc1c6c6056a0af4446b67a7f693);
-
+        var access_token = getParameterByName('access_token');
         document.getElementById('device_id').innerHTML = device_id;
 
         // websocket连接
